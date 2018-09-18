@@ -14,7 +14,11 @@ const thumbnailStyle = {
 export default (props) => {
   return (
     <div>
-      <h1 style={{ marginTop: `${rhythm(1 / 2)}` }}>{props.title}</h1>
+      {
+        props.title ?
+          <h1 style={{ marginTop: `${rhythm(1 / 2)}` }}>{props.title}</h1> :
+          null
+      }
 
       {props.group.map(({ node }, index) => (
         <WidgetContainer key={index}>

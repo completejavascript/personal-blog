@@ -3,11 +3,12 @@ import { rhythm } from "../utils/typography";
 import Helmet from "react-helmet";
 import ArticleGrid from "../components/article-grid";
 import NavPage from "../components/widget-navpage";
+import ArticleList2 from "../components/article-list-2";
 
 export default ({ pathContext, data }) => {
   const { group, index, pageCount, additionalContext, pathPrefix } = pathContext;
   const { tag } = additionalContext;
-  const tagTitle = `Thẻ ${tag.charAt(0).toLowerCase() + tag.slice(1)}`;
+  const tagTitle = `Thẻ ${tag}`;
 
   return (
     <div style={{ marginTop: `${rhythm(1 / 2)}` }}>
@@ -19,7 +20,7 @@ export default ({ pathContext, data }) => {
         ]}
       />
 
-      <ArticleGrid
+      <ArticleList2
         title={tagTitle}
         group={group}
       />

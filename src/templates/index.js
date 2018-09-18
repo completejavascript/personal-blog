@@ -18,7 +18,7 @@ const IndexPage = ({ data, pathContext }) => {
       />
 
       <ArticleList2
-        title={`Bài viết mới nhất`}
+        title={"Bài viết mới nhất"}
         group={group}
       />
 
