@@ -1,0 +1,9 @@
+aside a {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+aside a:hover {
+  text-decoration: none;
+  color: #4078c0;
+}

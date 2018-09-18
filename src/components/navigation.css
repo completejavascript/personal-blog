@@ -1,0 +1,18 @@
+nav a {
+  color: #fff;
+}
+
+nav a:not(.brand-name):hover {
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+}
+
+.mobile-hidden {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  .mobile-hidden {
+    display: initial !important;
+  }
+}
