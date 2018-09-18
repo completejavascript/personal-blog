@@ -1,3 +1,3 @@
 # the-algorithms-blog
 
-The source code for thuattoan.phamvanlam.com blog
+The source code for phamvanlam.com blog
