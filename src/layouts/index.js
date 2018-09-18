@@ -65,6 +65,7 @@ export default ({ children, data }) => (
               fanpage: data.site.siteMetadata.fanpage,
               fbPageId: data.site.siteMetadata.fbPageId
             }}
+            siteLinks={data.site.siteMetadata.siteLinks}
           />
         </GridColumn>
       </GridRow>
@@ -83,6 +84,10 @@ export const query = graphql`
         lang
         fanpage
         fbPageId
+        siteLinks {
+          text
+          link
+        }
       }
     }
     topics: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date] }) {

@@ -12,7 +12,17 @@ module.exports = {
     lang: `vi`,
     fbPageId: `711515045902029`,
     fbCommentId: `258963164755571`,
-    fbId: `100013577851883`
+    fbId: `100013577851883`,
+    siteLinks: [
+      {
+        text: "Ôn luyện thuật toán", 
+        link: "https://thuattoan.phamvanlam.com/",
+      },
+      {
+        text: "Complete JavaScript", 
+        link: "https://completejavascript.com/",
+      },
+    ]
   },
   pathPrefix: `/personal-blog`,
   plugins: [
