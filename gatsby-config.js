@@ -22,6 +22,10 @@ module.exports = {
         text: "Complete JavaScript", 
         link: "https://completejavascript.com/",
       },
+      {
+        text: "Portfolio", 
+        link: "http://about.phamvanlam.com/",
+      },
     ]
   },
   pathPrefix: `/personal-blog`,
