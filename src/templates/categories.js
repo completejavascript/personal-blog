@@ -4,6 +4,7 @@ import Helmet from "react-helmet";
 import ArticleGrid from "../components/article-grid";
 import NavPage from "../components/widget-navpage";
 import ArticleList2 from "../components/article-list-2";
+import { getRobotIndexTag } from "../utils/functions";
 
 export default ({ pathContext, data }) => {
   const { group, index, pageCount, additionalContext, pathPrefix } = pathContext;
@@ -14,10 +15,12 @@ export default ({ pathContext, data }) => {
     <div style={{ marginTop: `${rhythm(1 / 2)}` }}>
       <Helmet
         title={`${categoryTitle} - ${data.site.siteMetadata.title}`}
-        meta={[
-          { name: 'description', content: `${data.site.siteMetadata.description}` },
-          { name: 'keywords', content: `${data.site.siteMetadata.keywords}` },
-        ]}
+        meta={
+          [
+            { name: 'description', content: `${data.site.siteMetadata.description}` },
+            { name: 'keywords', content: `${data.site.siteMetadata.keywords}` },
+          ].concat(getRobotIndexTag(index))
+        }
       />
 
       <ArticleList2
