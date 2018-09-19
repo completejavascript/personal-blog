@@ -39,19 +39,15 @@ export default (props) => {
             <GridColumn xs={12} sm={12} md={6}>
               <h2
                 style={{
-                  marginBottom: `${rhythm(1 / 4)}`,
-                  marginTop: `0`
+                  marginBottom: `0`,
+                  marginTop: `0`,
+                  paddingBottom: `${rhythm(3 / 4)}`
                 }}
               >
                 <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
               </h2>
 
-              <p
-                style={{
-                  display: `flex`,
-                  paddingTop: `${rhythm(1 / 2)}`,
-                }}
-              >
+              <p style={{ paddingTop: `${rhythm(1 / 2)}`, margin: `0`}}>
                 {node.excerpt}
               </p>
             </GridColumn>
