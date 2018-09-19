@@ -4,6 +4,8 @@ import Link from "gatsby-link";
 import WidgetContainer from "./widget-container";
 import PostInfo from "./post-info";
 import { GridContainer, GridRow, GridColumn } from "../components/grid";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const thumbnailStyle = {
   width: `100%`,
@@ -26,7 +28,10 @@ export default (props) => {
               {
                 node.frontmatter.thumbnail !== "" ?
                   <Link to={node.fields.slug} style={thumbnailStyle}>
-                    <img src={node.frontmatter.thumbnail}></img>
+                    <LazyLoadImage 
+                      src={node.frontmatter.thumbnail} 
+                      effect={"opacity"}
+                    />
                   </Link> : null
               }
               <PostInfo
