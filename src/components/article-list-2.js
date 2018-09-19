@@ -2,7 +2,6 @@ import React from "react";
 import { rhythm } from "../utils/typography";
 import Link from "gatsby-link";
 import WidgetContainer from "./widget-container";
-import CategoryTag from "../components/category-tag";
 import PostInfo from "./post-info";
 import { GridContainer, GridRow, GridColumn } from "../components/grid";
 
@@ -50,9 +49,7 @@ export default (props) => {
               <p
                 style={{
                   display: `flex`,
-                  // marginTop: `${rhythm(1 / 2)}`,
                   paddingTop: `${rhythm(1 / 2)}`,
-                  borderTop: `1px solid hsla(0,0%,0%,0.07)`,
                 }}
               >
                 {node.excerpt}
