@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://phamvanlam.com`,
-    title: `Phạm Văn Lâm Blog`,
+    title: `Lam Pham Blog`,
     subtitle: `Chia sẻ về các phần mềm miễn phí hay nhất`,
     description: `Blog này được lập nên với mục đích chia sẻ những kiến thức và kinh nghiệm của bản thân về các các phần mềm miễn phí, mã nguồn mở,... tốt nhất`,
     keywords: `phan-mem, phan mem, ma nguon mo, ma-nguon-mo, open-source, phan mem mien phi, phan-mem-mien-phi`,
