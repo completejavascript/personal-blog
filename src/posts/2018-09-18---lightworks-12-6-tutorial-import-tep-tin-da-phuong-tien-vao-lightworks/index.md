@@ -2,7 +2,7 @@
 title: "[Lightworks 12.6 tutorial] Import tệp tin đa phương tiện vào Lightworks"
 date: "2018-09-18T23:00:18.083Z"
 categories: ["Lightworks 12.6 tutorial"]
-tags: ["Lightworks", "Lightworks 12.6", "tutorial", "Lightworks 12.6 tutorial", "import tệp tin đa phương tiện"]
+tags: ["tutorial"]
 keywords: "import tệp tin đa phương tiện vào Lightworks"
 thumbnail: "/images/lightworks-12-6-tutorial-import-tep-tin-da-phuong-tien-vao-lightworks.jpg"
 type: "video"

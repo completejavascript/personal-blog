@@ -2,7 +2,7 @@
 title: "[GIMP 2.8 tutorial] Tạo ảnh phản chiếu - reflection trong GIMP "
 date: "2018-09-18T22:54:18.083Z"
 categories: ["GIMP 2.8 tutorial"]
-tags: ["GIMP", "GIMP 2.8", "tutorial", "GIMP 2.8 tutorial", "Tạo ảnh phản chiếu"]
+tags: ["tutorial"]
 keywords: "Tạo ảnh phản chiếu"
 thumbnail: "/images/gimp-2-8-tutorial-tao-anh-phan-chieu-reflection-trong-gimp.jpg"
 type: "video"

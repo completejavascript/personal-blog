@@ -2,7 +2,7 @@
 title: "[Lightworks 12.6 tutorial] Tải và cài đặt phần mềm chỉnh sửa video Lightworks cho Windows"
 date: "2018-09-18T22:58:18.083Z"
 categories: ["Lightworks 12.6 tutorial"]
-tags: ["Lightworks", "Lightworks 12.6", "tutorial", "Lightworks 12.6 tutorial", "tải và cài đặt"]
+tags: ["tutorial", "tải và cài đặt"]
 keywords: "tải và cài đặt phần mềm chỉnh sửa video Lightworks"
 thumbnail: "/images/lightworks-12-6-tutorial-tai-va-cai-dat-phan-mem-chinh-sua-video-lightworks-cho-windows.jpg"
 type: "video"

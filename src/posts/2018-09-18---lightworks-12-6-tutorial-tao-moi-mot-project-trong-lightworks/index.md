@@ -2,7 +2,7 @@
 title: "[Lightworks 12.6 tutorial] Tạo mới một project trong Lightworks"
 date: "2018-09-18T22:59:18.083Z"
 categories: ["Lightworks 12.6 tutorial"]
-tags: ["Lightworks", "Lightworks 12.6", "tutorial", "Lightworks 12.6 tutorial", "Tạo mới một project"]
+tags: ["tutorial"]
 keywords: "Tạo mới một project trong Lightworks"
 thumbnail: "/images/lightworks-12-6-tutorial-tao-moi-mot-project-trong-lightworks.jpg"
 type: "video"

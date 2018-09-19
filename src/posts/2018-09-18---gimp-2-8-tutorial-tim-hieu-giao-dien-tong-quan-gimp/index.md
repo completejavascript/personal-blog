@@ -2,7 +2,7 @@
 title: "[GIMP 2.8 tutorial] Tìm hiểu giao diện tổng quan của GIMP"
 date: "2018-09-18T22:22:18.083Z"
 categories: ["GIMP 2.8 tutorial"]
-tags: ["GIMP", "GIMP 2.8", "tutorial", "GIMP 2.8 tutorial", "giao diện GIMP"]
+tags: ["tutorial", "giao diện"]
 keywords: "giao diện tổng quan của GIMP"
 thumbnail: "/images/gimp-2-8-tutorial-tim-hieu-giao-dien-tong-quan-gimp.jpg"
 type: "video"

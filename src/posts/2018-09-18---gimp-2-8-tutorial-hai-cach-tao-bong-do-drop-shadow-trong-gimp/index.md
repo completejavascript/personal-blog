@@ -2,7 +2,7 @@
 title: "[GIMP 2.8 tutorial] Hai cách tạo bóng đổ - drop shadow trong GIMP"
 date: "2018-09-18T22:49:18.083Z"
 categories: ["GIMP 2.8 tutorial"]
-tags: ["GIMP", "GIMP 2.8", "tutorial", "GIMP 2.8 tutorial", "tạo bóng đổ", "drop shadow"]
+tags: ["tutorial"]
 keywords: "tạo bóng đổ - drop shadow trong GIMP"
 thumbnail: "/images/gimp-2-8-tutorial-hai-cach-tao-bong-do-drop-shadow-trong-gimp.jpg"
 type: "video"

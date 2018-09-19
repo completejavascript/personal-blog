@@ -2,7 +2,7 @@
 title: "[GIMP 2.8 tutorial] Hướng dẫn tải và cài đặt phần mềm GIMP cho Windows"
 date: "2018-09-18T22:02:18.083Z"
 categories: ["GIMP 2.8 tutorial"]
-tags: ["GIMP", "tải và cài đặt", "GIMP 2.8", "tutorial", "GIMP 2.8 tutorial"]
+tags: ["tải và cài đặt", "tutorial"]
 keywords: "tải và cài đặt phần mềm GIMP"
 thumbnail: "/images/gimp-2-8-tutorial-tai-va-cai-dat-phan-mem-chinh-sua-anh-gimp-cho-windows.jpg"
 type: "video"

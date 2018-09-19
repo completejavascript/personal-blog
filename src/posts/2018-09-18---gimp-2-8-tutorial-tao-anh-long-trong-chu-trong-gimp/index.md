@@ -2,7 +2,7 @@
 title: "[GIMP 2.8 tutorial] Tạo ảnh lồng trong chữ trong GIMP "
 date: "2018-09-18T22:52:18.083Z"
 categories: ["GIMP 2.8 tutorial"]
-tags: ["GIMP", "GIMP 2.8", "tutorial", "GIMP 2.8 tutorial", "Tạo ảnh lồng trong chữ"]
+tags: ["tutorial"]
 keywords: "Tạo ảnh lồng trong chữ"
 thumbnail: "/images/gimp-2-8-tutorial-tao-anh-long-trong-chu-trong-gimp.jpg"
 type: "video"

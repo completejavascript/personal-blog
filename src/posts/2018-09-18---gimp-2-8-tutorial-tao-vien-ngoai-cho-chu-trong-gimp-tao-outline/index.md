@@ -2,7 +2,7 @@
 title: "[GIMP 2.8 tutorial] Tạo viền ngoài cho chữ trong GIMP - tạo outline"
 date: "2018-09-18T22:45:18.083Z"
 categories: ["GIMP 2.8 tutorial"]
-tags: ["GIMP", "GIMP 2.8", "tutorial", "GIMP 2.8 tutorial", "tạo viền ngoài cho chữ trong GIMP", "tạo outline"]
+tags: ["tutorial"]
 keywords: "tạo viền ngoài cho chữ trong GIMP"
 thumbnail: "/images/gimp-2-8-tutorial-tao-vien-ngoai-cho-chu-trong-gimp-tao-outline.jpg"
 type: "video"

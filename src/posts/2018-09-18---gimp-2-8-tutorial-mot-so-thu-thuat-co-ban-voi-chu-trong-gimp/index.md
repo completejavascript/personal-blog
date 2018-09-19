@@ -2,7 +2,7 @@
 title: "[GIMP 2.8 tutorial] Một số thủ thuật cơ bản với chữ trong GIMP"
 date: "2018-09-18T22:39:18.083Z"
 categories: ["GIMP 2.8 tutorial"]
-tags: ["GIMP", "GIMP 2.8", "tutorial", "GIMP 2.8 tutorial", "thủ thuật cơ bản với chữ"]
+tags: ["tutorial"]
 keywords: "thủ thuật cơ bản với chữ trong GIMP"
 thumbnail: "/images/gimp-2-8-tutorial-mot-so-thu-thuat-co-ban-voi-chu-trong-gimp.jpg"
 type: "video"

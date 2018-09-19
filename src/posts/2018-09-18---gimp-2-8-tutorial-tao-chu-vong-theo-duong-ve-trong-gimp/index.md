@@ -2,7 +2,7 @@
 title: "[GIMP 2.8 tutorial] Tạo chữ vòng theo đường vẽ trong GIMP"
 date: "2018-09-18T22:47:18.083Z"
 categories: ["GIMP 2.8 tutorial"]
-tags: ["GIMP", "GIMP 2.8", "tutorial", "GIMP 2.8 tutorial", "Tạo chữ vòng theo đường vẽ"]
+tags: ["tutorial"]
 keywords: "Tạo chữ vòng theo đường vẽ trong GIMP"
 thumbnail: "/images/gimp-2-8-tutorial-tao-chu-vong-theo-duong-ve-trong-gimp.jpg"
 type: "video"

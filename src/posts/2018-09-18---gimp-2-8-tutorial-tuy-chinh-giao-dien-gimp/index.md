@@ -2,7 +2,7 @@
 title: "[GIMP 2.8 tutorial] Tùy chỉnh giao diện GIMP"
 date: "2018-09-18T22:36:18.083Z"
 categories: ["GIMP 2.8 tutorial"]
-tags: ["GIMP", "GIMP 2.8", "tutorial", "GIMP 2.8 tutorial", "tùy chỉnh giao diện GIMP"]
+tags: ["tutorial", "giao diện"]
 keywords: "tùy chỉnh giao diện GIMP"
 thumbnail: "/images/gimp-2-8-tutorial-tuy-chinh-giao-dien-gimp.jpg"
 type: "video"

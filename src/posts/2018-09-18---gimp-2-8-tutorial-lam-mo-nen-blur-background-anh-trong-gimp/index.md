@@ -2,7 +2,7 @@
 title: "[GIMP 2.8 tutorial] Làm mờ nền - blur background ảnh trong GIMP"
 date: "2018-09-18T22:51:18.083Z"
 categories: ["GIMP 2.8 tutorial"]
-tags: ["GIMP", "GIMP 2.8", "tutorial", "GIMP 2.8 tutorial", "Làm mờ nền", "blur background", "khả ngân"]
+tags: ["tutorial"]
 keywords: "làm mờ nền - blur background ảnh trong GIMP"
 thumbnail: "/images/gimp-2-8-tutorial-lam-mo-nen-blur-background-anh-trong-gimp.jpg"
 type: "video"
