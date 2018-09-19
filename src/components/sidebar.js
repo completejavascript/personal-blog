@@ -8,17 +8,6 @@ import WidgetTagCloud from "../components/widget-tag-cloud";
 import WidgetSiteLinks from "../components/widget-site-links";
 import "./sidebar.css";
 
-const siteLinks = [
-  {
-    text: "Ôn luyện thuật toán", 
-    link: "https://thuattoan.phamvanlam.com/",
-  },
-  {
-    text: "Complete JavaScript", 
-    link: "https://completejavascript.com/",
-  },
-];
-
 export default props => (
   <aside style={{ paddingTop: `${rhythm(0.35)}` }}>
     <WidgetCategory categories={props.categories} />
@@ -26,6 +15,6 @@ export default props => (
     <WidgetGoogleSearch siteUrl={props.siteUrl} />
     <WidgetFacebook fbConfig={props.fbConfig} />
     <WidgetTagCloud tags={props.tags} />
-    <WidgetSiteLinks siteLinks={siteLinks} />
+    <WidgetSiteLinks siteLinks={props.siteLinks} />
   </aside>
 );
