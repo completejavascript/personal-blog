@@ -4,6 +4,8 @@ import Link from "gatsby-link";
 import WidgetContainer from "./widget-container";
 import CategoryTag from "../components/category-tag";
 import PostInfo from "./post-info";
+import LazyImage from "../components/lazy-image";
+import placeHolder from "../images/place-holder.png";
 
 export default (props) => {
   return (
@@ -19,7 +21,14 @@ export default (props) => {
           {
             node.frontmatter.thumbnail !== "" ?
               <Link to={node.fields.slug}>
-                <img src={node.frontmatter.thumbnail}></img>
+                <LazyImage
+                  placeHolder={placeHolder}
+                  src={node.frontmatter.thumbnail}
+                  width={`100%`}
+                  height={`auto`}
+                  effect={"opacity"}
+                  alt={`${node.frontmatter.title} thumbnail`}
+                />
               </Link> : null
           }
           <div>

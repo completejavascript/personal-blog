@@ -4,8 +4,8 @@ import Link from "gatsby-link";
 import WidgetContainer from "./widget-container";
 import PostInfo from "./post-info";
 import { GridRow, GridColumn } from "../components/grid";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/opacity.css';
+import LazyImage from "../components/lazy-image";
+import placeHolder from "../images/place-holder.png";
 
 export default (props) => {
   return (
@@ -23,11 +23,13 @@ export default (props) => {
               {
                 node.frontmatter.thumbnail !== "" ?
                   <Link to={node.fields.slug}>
-                    <LazyLoadImage 
-                      src={node.frontmatter.thumbnail} 
-                      effect={"opacity"}
+                    <LazyImage
+                      placeHolder={placeHolder}
+                      src={node.frontmatter.thumbnail}
                       width={`100%`}
                       height={`auto`}
+                      effect={"opacity"}
+                      alt={`${node.frontmatter.title} thumbnail`}
                     />
                   </Link> : null
               }
@@ -49,7 +51,7 @@ export default (props) => {
                 <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
               </h2>
 
-              <p style={{ paddingTop: `${rhythm(1 / 2)}`, margin: `0`}}>
+              <p style={{ paddingTop: `${rhythm(1 / 2)}`, margin: `0` }}>
                 {node.excerpt}
               </p>
             </GridColumn>

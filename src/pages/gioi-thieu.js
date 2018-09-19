@@ -1,8 +1,9 @@
 import React from "react";
-import { rhythm } from "../utils/typography";
 import Helmet from "react-helmet";
 import profile from "../images/profile_phamvanlam-com-co-dien.jpg";
 import WidgetContainer from "../components/widget-container";
+import LazyImage from "../components/lazy-image";
+import placeHolder from "../images/place-holder.png";
 
 export default ({ data }) => {
   const seoTitle = `Giới thiệu - ${data.site.siteMetadata.title}`;
@@ -16,19 +17,30 @@ export default ({ data }) => {
           { name: 'description', content: `${data.site.siteMetadata.description}` },
           { name: 'keywords', content: `${data.site.siteMetadata.keywords}` },
         ]}
+        link={[
+          { rel: "canonical", href: `${url}` }
+        ]}
       />
 
       <h1>Giới thiệu</h1>
       <WidgetContainer>
-        <img
-          src={profile}
-          alt="profile_phamvanlam-com-co-dien"
-          width="252" height="auto"
-          style={{ float: `left`, paddingRight: `${rhythm(1 / 2)}` }}
-        />
         <p>
           Xin chào các bạn! Tôi là Phạm Văn Lâm, cựu sinh viên Đại học Bách Khoa Hà Nội chuyên ngành Điện tử – Viễn thông. Hiện tại, tôi đang làm việc tại SVMC – trung tâm nghiên cứu và phát triển điện thoại di động Samsung tại Việt Nam.
         </p>
+
+        <div style={{ display: `flex`, justifyContent: `center` }}>
+
+          <LazyImage
+            placeHolder={placeHolder}
+            src={profile}
+            width={`252`}
+            height={`auto`}
+            effect={"opacity"}
+            alt={`lam pham profile image`}
+            keepRatio
+          />
+        </div>
+
         <p>
           Blog này được lập nên với mục đích chia sẻ những kiến thức và kinh nghiệm của bản thân về các các phần mềm miễn phí, mã nguồn mở,... tốt nhất
         </p>
@@ -41,6 +53,7 @@ export default ({ data }) => {
         <p>
           Rất mong nhận được sự ủng hộ và đóng góp ý kiến của các bạn để trang web ngày càng hoàn thiện hơn. Qua đó, tôi có thêm nhiều động lực để phát triển trang này.
         </p>
+
       </WidgetContainer>
     </article>
   )

@@ -7,7 +7,7 @@ import Helmet from "react-helmet";
 import './index.css';
 import favicon from "../images/favicon.ico";
 
-const NAV_HEIGHT = 60;
+const NAV_HEIGHT = 56;
 
 const Footer = props => (
   <footer

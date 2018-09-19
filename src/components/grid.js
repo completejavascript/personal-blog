@@ -26,7 +26,7 @@ export function GridRow({ children }) {
 }
 
 export function GridColumn({ xs, sm, md, lg, xl, children, className }) {
-  let colClassName = className;
+  let colClassName = className || "";
   
   xs && (colClassName += ` gr-col-xs-${xs}`);
   sm && (colClassName += ` gr-col-sm-${sm}`);

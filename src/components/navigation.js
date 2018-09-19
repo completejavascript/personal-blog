@@ -7,7 +7,7 @@ import "./navigation.css";
 const linkStyle = {
   float: `right`,
   marginLeft: `${rhythm(0.5)}`,
-  marginTop: `${rhythm(0.35)}`
+  marginTop: `${rhythm(0.33)}`
 };
 
 const brand = "Lam Pham Blog";
