@@ -3,14 +3,9 @@ import { rhythm } from "../utils/typography";
 import Link from "gatsby-link";
 import WidgetContainer from "./widget-container";
 import PostInfo from "./post-info";
-import { GridContainer, GridRow, GridColumn } from "../components/grid";
+import { GridRow, GridColumn } from "../components/grid";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
-
-const thumbnailStyle = {
-  width: `100%`,
-  height: `auto`
-}
+import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 export default (props) => {
   return (
@@ -27,10 +22,12 @@ export default (props) => {
             <GridColumn xs={12} sm={12} md={6}>
               {
                 node.frontmatter.thumbnail !== "" ?
-                  <Link to={node.fields.slug} style={thumbnailStyle}>
+                  <Link to={node.fields.slug}>
                     <LazyLoadImage 
                       src={node.frontmatter.thumbnail} 
                       effect={"opacity"}
+                      width={`100%`}
+                      height={`auto`}
                     />
                   </Link> : null
               }
