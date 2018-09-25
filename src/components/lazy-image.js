@@ -70,6 +70,7 @@ export default class LazyImage extends React.Component {
         height={height}
         ref={imgElm => this.imgElm = imgElm}
         className="lazy-image"
+        alt={this.props.alt}
       />
     )
   }
