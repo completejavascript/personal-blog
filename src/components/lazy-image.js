@@ -1,32 +1,63 @@
 import React from 'react';
 import "./lazy-image.css";
 
+function elementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+
+  return (
+    rect.top >= 0
+    && rect.left >= 0
+    && rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+  )
+}
+
 export default class LazyImage extends React.Component {
   constructor(props) {
     super(props);
-    this.realImgRef = null;
+
+    this.state = {
+      loaded: false
+    }
+
+    this.handleScroll = this.handleScroll.bind(this);
   }
 
   componentDidMount() {
-    // Load real image
-    const imgLoader = new Image();
-    imgLoader.src = this.props.src;
-    imgLoader.onload = () => {
-      const ratioWH = imgLoader.width / imgLoader.height;
+    this.handleScroll();
+    
+    window.addEventListener('scroll', this.handleScroll);
+  }
 
-      this.imgElm.setAttribute(
-        `src`,
-        `${this.props.src}`
-      );
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
 
-      this.props.keepRatio && this.imgElm.setAttribute(
-        `height`,
-        `${this.props.width / ratioWH}`
-      )
+  handleScroll() {
+    if (!this.state.loaded && elementInViewport(this.imgElm)) {
+      // Load real image
+      const imgLoader = new Image();
+      imgLoader.src = this.props.src;
+      imgLoader.onload = () => {
+        const ratioWH = imgLoader.width / imgLoader.height;
 
-      this.imgElm.classList.add(`${this.props.effect}`);
+        this.imgElm.setAttribute(
+          `src`,
+          `${this.props.src}`
+        );
+
+        this.props.keepRatio && this.imgElm.setAttribute(
+          `height`,
+          `${this.props.width / ratioWH}`
+        )
+
+        this.imgElm.classList.add(`${this.props.effect}`);
+
+        this.setState({
+          loaded: true
+        });
+      }
     }
-  };
+  }
 
   render() {
     const width = this.props.width || '100%';
