@@ -108,6 +108,7 @@ export const query = graphql`
         node {
           frontmatter {
             title
+            thumbnail
           }
           fields {
             slug
