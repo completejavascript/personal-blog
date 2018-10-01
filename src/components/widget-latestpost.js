@@ -32,7 +32,7 @@ export default props => {
           {
             props.latestPosts.map(({ node }, index) => {
               return (
-                <ListItemWrapper index={index} node={node}>
+                <ListItemWrapper key={index} node={node}>
                   <div
                     style={{
                       display: `flex`,

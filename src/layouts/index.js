@@ -6,6 +6,8 @@ import { GridContainer, GridRow, GridColumn } from "../components/grid";
 import Helmet from "react-helmet";
 import './index.css';
 import favicon from "../images/favicon.ico";
+import "prismjs/themes/prism-solarizedlight.css";
+import "./code-highlight.css";
 
 const NAV_HEIGHT = 56;
 
