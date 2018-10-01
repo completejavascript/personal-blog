@@ -20,48 +20,46 @@ const ListItemWrapper = ({ index, node, children }) => (
 
 export default props => {
   return (
-    <div>
+    <WidgetContainer>
       <WidgetTitle> Bài viết mới nhất </WidgetTitle>
-      <WidgetContainer>
-        <ul
-          style={{
-            listStyleType: `none`,
-            marginLeft: 0
-          }}
-        >
-          {
-            props.latestPosts.map(({ node }, index) => {
-              return (
-                <ListItemWrapper key={index} node={node}>
-                  <div
+      <ul
+        style={{
+          listStyleType: `none`,
+          marginLeft: 0
+        }}
+      >
+        {
+          props.latestPosts.map(({ node }, index) => {
+            return (
+              <ListItemWrapper key={index} node={node}>
+                <div
+                  style={{
+                    display: `flex`,
+                    paddingLeft: `${rhythm(0.25)}`,
+                    paddingRight: `${rhythm(0.25)}`,
+                  }}
+                >
+                  <span
                     style={{
-                      display: `flex`,
-                      paddingLeft: `${rhythm(0.25)}`,
-                      paddingRight: `${rhythm(0.25)}`,
+                      marginRight: `${rhythm(0.4)}`,
+                      color: `#aaa`,
+                      fontStyle: `italic`,
+                      fontSize: `${rhythm(1.15)}`,
+                      lineHeight: 1,
                     }}
                   >
-                    <span
-                      style={{
-                        marginRight: `${rhythm(0.4)}`,
-                        color: `#aaa`,
-                        fontStyle: `italic`,
-                        fontSize: `${rhythm(1.15)}`,
-                        lineHeight: 1,
-                      }}
-                    >
-                      {index + 1}.
+                    {index + 1}.
                   </span>
 
-                    <Link to={node.fields.slug}>
-                      {node.frontmatter.title.charAt(0).toUpperCase() + node.frontmatter.title.slice(1)}
-                    </Link>
-                  </div>
-                </ListItemWrapper>
-              )
-            })
-          }
-        </ul>
-      </WidgetContainer>
-    </div>
+                  <Link to={node.fields.slug}>
+                    {node.frontmatter.title.charAt(0).toUpperCase() + node.frontmatter.title.slice(1)}
+                  </Link>
+                </div>
+              </ListItemWrapper>
+            )
+          })
+        }
+      </ul>
+    </WidgetContainer>
   )
 }

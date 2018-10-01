@@ -21,27 +21,25 @@ export default props => {
   const numberTagMax = popularTagPairsSortedByNumber[0][1];
 
   return (
-    <div>
+    <WidgetContainer>
       <WidgetTitle> Thẻ phổ biến </WidgetTitle>
-      <WidgetContainer>
-        {
-          popularTagPairsSortedByAlphabet.map((tagPair, index) => {
-            return (
-              <Link
-                key={index}
-                to={`/tag/${slug(tagPair[0]).toLowerCase()}/`}
-                style={{
-                  marginRight: `${rhythm(1 / 6)}`,
-                  display: `inline-block`,
-                  fontSize: `${rhythm((tagPair[1] / numberTagMax < 0.4 ? 0.4 : tagPair[1] / numberTagMax) * 1.05)}`,
-                }}
-              >
-                {tagPair[0]}
-              </Link>
-            )
-          })
-        }
-      </WidgetContainer>
-    </div>
+      {
+        popularTagPairsSortedByAlphabet.map((tagPair, index) => {
+          return (
+            <Link
+              key={index}
+              to={`/tag/${slug(tagPair[0]).toLowerCase()}/`}
+              style={{
+                marginRight: `${rhythm(1 / 6)}`,
+                display: `inline-block`,
+                fontSize: `${rhythm((tagPair[1] / numberTagMax < 0.4 ? 0.4 : tagPair[1] / numberTagMax) * 1.05)}`,
+              }}
+            >
+              {tagPair[0]}
+            </Link>
+          )
+        })
+      }
+    </WidgetContainer>
   )
 }

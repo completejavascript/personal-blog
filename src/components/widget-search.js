@@ -36,27 +36,25 @@ export default class WidgetGoogleSearch extends React.Component {
 
   render() {
     return (
-      <div>
+      <WidgetContainer>
         <WidgetTitle> Tìm kiếm </WidgetTitle>
-        <WidgetContainer>
-          <form 
-            style={{ 
-              display: `flex`,
-              justifyContent: `center`
-            }}>
-            <input
-              type="text"
-              className="widget-search-input"
-              placeholder="Nhập từ khóa tìm kiếm tại đây..."
-              onChange={this.onInputChanged}
-              required
-            />
-            <button type="submit" className="widget-search-btn" onClick={this.onSearch}>
-              <i className="fa fa-search"></i>
-            </button>
-          </form>
-        </WidgetContainer>
-      </div>
+        <form
+          style={{
+            display: `flex`,
+            justifyContent: `center`
+          }}>
+          <input
+            type="text"
+            className="widget-search-input"
+            placeholder="Nhập từ khóa tìm kiếm tại đây..."
+            onChange={this.onInputChanged}
+            required
+          />
+          <button type="submit" className="widget-search-btn" onClick={this.onSearch}>
+            <i className="fa fa-search"></i>
+          </button>
+        </form>
+      </WidgetContainer>
     )
   }
 }

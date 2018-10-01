@@ -6,26 +6,24 @@ const title = `Liên kết`;
 
 export default ({ siteLinks }) => {
   return (
-    <div>
+    <WidgetContainer>
       <WidgetTitle> {title} </WidgetTitle>
-      <WidgetContainer>
-        <ul
-          style={{
-            listStyleType: `none`,
-            marginLeft: 0
-          }}
-        >
-          {
-            siteLinks.map((item, index) => {
-              return (
-                <li key={index}>
-                  <a href={item.link}>{item.text}</a>
-                </li>
-              )
-            })
-          }
-        </ul>
-      </WidgetContainer>
-    </div>
+      <ul
+        style={{
+          listStyleType: `none`,
+          marginLeft: 0
+        }}
+      >
+        {
+          siteLinks.map((item, index) => {
+            return (
+              <li key={index}>
+                <a href={item.link}>{item.text}</a>
+              </li>
+            )
+          })
+        }
+      </ul>
+    </WidgetContainer>
   )
 }

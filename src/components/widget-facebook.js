@@ -8,18 +8,16 @@ export default props => {
   const { fbPageId, fanpage } = fbConfig;
 
   return (
-    <div>
+    <WidgetContainer>
       <WidgetTitle> Mạng xã hội </WidgetTitle>
-      <WidgetContainer>
-        <FacebookProvider appId={fbPageId}>
-          <Page
-            href={fanpage}
-            dataWidth="100%"
-            height="300px"
-            dataAdaptContainerWidth="true"
-          />
-        </FacebookProvider>
-      </WidgetContainer>
-    </div>
+      <FacebookProvider appId={fbPageId}>
+        <Page
+          href={fanpage}
+          dataWidth="100%"
+          height="300px"
+          dataAdaptContainerWidth="true"
+        />
+      </FacebookProvider>
+    </WidgetContainer>
   )
 }
