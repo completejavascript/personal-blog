@@ -79,7 +79,7 @@ export default ({ data }) => {
         {
           (post.frontmatter.type === "" || post.frontmatter.type === "standard") ?
             <div>
-              <img src={post.frontmatter.thumbnail}></img>
+              <img style={{width: `100%`, height: `auto`}} src={post.frontmatter.thumbnail} />
             </div> : null
         }
 
