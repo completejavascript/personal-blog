@@ -5,7 +5,7 @@ module.exports = {
     subtitle: `Chia sẻ về các phần mềm miễn phí hay nhất`,
     description: `Blog này được lập nên với mục đích chia sẻ những kiến thức và kinh nghiệm của bản thân về các các phần mềm miễn phí, mã nguồn mở,... tốt nhất`,
     keywords: `phan-mem, phan mem, ma nguon mo, ma-nguon-mo, open-source, phan mem mien phi, phan-mem-mien-phi`,
-    fanpage: `https://www.facebook.com/lamphamblog/`,
+    fanpage: `https://www.facebook.com/hdopensource/`,
     email: 'lampv606@gmail.com',
     twitterHandle: ``,
     pageLength: 6,
